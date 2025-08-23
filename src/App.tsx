@@ -13,13 +13,13 @@ import OrderSuccessPage from './pages/OrderSuccessPage';
 import { Product } from './types/Product';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [isCartOpen, setIsCartOpen] = useState(false);
+ const [currentPage, setCurrentPage] = useState('home');
+ const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+ const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleNavigate = (page: string) => {
-    setCurrentPage(page);
-    setSelectedProduct(null);
+  setCurrentPage(page);
+  setSelectedProduct(null);
   };
 
   const handleViewProduct = (product: Product) => {
